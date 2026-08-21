@@ -1,0 +1,315 @@
+/*base da página*/
+:root {
+  --primary: #0066cc;
+  --primary-dark: #004a99;
+  --secondary: #f9a826;
+  --background: #f5f7fa;
+  --white: #ffffff;
+  --text: #333333;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: 0.3s;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+}
+header ul {
+  display: flex;
+  gap: 30px;
+  align-items: center
+}
+header span {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.caixa-logo {
+  display: flex;
+  align-items: center
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.lista-menu a {
+  color: var(--white);
+}
+.lista-menu a:hover {
+  color: var(--secondary);
+}
+
+.caixa-logo {
+  position: absolute;
+  left: 30px;
+}
+.img-logo {
+  width: auto;
+  height: 40px;
+}
+.caixa-span-logo span {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.caixa-entrar {
+  position: absolute;
+  border-radius: 12px;
+  right: 45px;
+}
+.caixa-entrar a {
+  border-radius: 12px;
+  color: var(--text);
+  background-color: var(--secondary);
+  border-radius: 25px;
+}
+
+.caixa-entrar a:hover {
+    background-color: var(--white);
+}
+.link-entrar {
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+footer span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*--- Equipe ---*/
+.caixa-menu-equipe a {
+  color: var(--secondary);
+  cursor:default;
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  padding: 9px;
+}
+.lista_equipe img {
+  height: 150px;
+  width: auto;
+}
+.lista_equipe {
+  text-align: center;
+  display: flex;
+  gap: 20px;                             
+  list-style: none;                      
+  max-width: 500px;                      
+  margin: 40px auto;
+  margin-top: 150px;
+}
+
+.lista_equipe li {
+  background-color: rgb(195, 194, 194);
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/*--------------fim--------------*/
+
+/*---Sobre---*/
+.caixa-menu-sobre a {
+    background-color: var(--primary-dark);
+    border-radius: 20px;
+    padding: 9px;
+    color: var(--secondary);
+    cursor: default;
+}
+/*--------------fim--------------*/
+
+/*---Patrocinadores---*/
+.caixa-menu-patrocinadores {
+    background-color: var(--primary-dark);
+    border-radius: 20px;
+    padding: 9px;
+    cursor:default;
+}
+.caixa-menu-patrocinadores a {
+    color: var(--secondary);
+}
+.patrocinadores ul {
+    display: grid;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;  
+    text-align: center; 
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1;
+}
+.lista-patrocinadores li {
+    border: 2px solid rgb(113, 113, 113);
+    border-radius: 12px;
+    width: fit-content;
+    font-size: 12px;
+}
+.lista-patrocinadores li img {
+    width: auto;
+    height: 300px;
+}
+
+/*--------------fim--------------*/
+
+/* Contatos */
+.caixa-menu-contato a {
+  color: var(--secondary);
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  padding: 9px;
+  cursor:default;
+}
+.lista-contato {
+  text-align: center;
+  display: flex;
+  gap: 20px;                             
+  list-style: none;                      
+  max-width: 500px;                      
+  margin: 40px auto;
+  margin-top: 150px;
+  justify-content: center;
+}
+.lista_contato ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.lista-contato img {
+  height: 180px;
+  width: 200px;
+  border-radius: 12px;
+ 
+}
+.lista-contato li {
+  background-color: rgb(195, 194, 194);
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Pontos Turísticos */
+.caixa-menu-pontos-tur a {
+  color: var(--secondary);
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  padding: 9px;
+  cursor:default;
+}
+/*--------------fim--------------*/
+
+.praias {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+}
+.praias h3 {
+  margin-bottom: 16px;    
+  font-size: 1.5rem;
+}
+.lista-praias {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.praias img {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+}
+.praia-do-futuro, .praia-de-iracema, .praia-de-meireles, .praia-do-mucuripe {
+    border: 2px solid gray;
+    padding: 10px 12px;
+    border-radius: 12px;
+}
+
+.cultura, .parques {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+}
+.cultura img, .parques img {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+}
+.cultura h3, .parques h3 {
+  margin-bottom: 16px;    
+  font-size: 1.5rem;
+}
+.lista-cultura, .lista-parques {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.teatro-jose-de-alencar {
+    width: 50%;
+}
+.dragao-do-mar, .teatro-jose-de-alencar {
+    border: 2px solid gray;
+    padding: 10px 12px;
+    border-radius: 12px;
+    width: 350px; 
+}
+.parque-da-liberdade, .parque-estadual-coco {
+    border: 2px solid gray;
+    padding: 10px 12px;
+    border-radius: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 350px;
+}
+/* Inicio */
+.caixa-menu-inicio a {
+    color: var(--secondary);
+    cursor:default;
+    background-color: var(--primary-dark);
+    border-radius: 20px;
+    padding: 9px;
+}
+.section-inicio main {
+  background-image: url(../img/praias-perto-de-fortaleza-prea.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 300px;
+}
+.caixa-textos-inicio {
+  color: var(--white);
+  align-content: center;
+  display: flex;
+  flex-direction: column;   /* Empilha o título e o parágrafo */
+  justify-content: center;  /* Centraliza no eixo VERTICAL */
+  align-items: center;
+}
+
+.caixa-textos-inicio a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+main h3 {
+  font-size: 32px;
+}
